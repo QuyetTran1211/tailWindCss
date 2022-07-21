@@ -1,63 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/style.css" rel="stylesheet">
-</head>
-<body class="bg-blue-800 debug-screens">
-  <div class="container bg-gray-100 mx-auto min-h-screen px-6 py-8">
-    <! - page header / headings ->
-    <section id="header">
-      <div>
-        <h1>Tom Gonzales home training <br> I'll get you in shape!</h1>
-        <h2>Muscle building • Functional training • Nutritional advice</h2>
-      </div>
-    </section>
-
-    <section id="image-sevices">
-      <! - picture ->
-      <div id = "image">
-        <img src = "img/tom.jpg" alt = "Tom Gonzales Online Training">
-      </div>
-      <! - Services ->
-      <div id = "services">
-        <h3>I offer you:</h3>
-        <ul>
-          <li>Lessons via Skype and you can record all sessions and watch them again later. </li>
-          <li>Holistic full body training</li>
-          <li>Training without equipment</li>
-          <li>Pain reduction</li>
-          <li>Tailored nutrition plans</li>
-        </ul>
-        <h3>My qualifications:</h3>
-          <ul>
-            <li>Certified nutritionist</li>
-            <li>Certified fitness trainer</li>
-            <li>5 years of experience in 1: 1 training</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TailwindCss</title>
+  </head>
+  <body class="font-nunito">
+    <!-- INTO SECTION -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative">
+      <!-- NAVBAR SECTION -->
+      <nav class="w-full fixed top-0 bg-white">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="../img/logo.png" alt="" />
+            <span class="text-2xl font-bold text-indigo-900">Portwind</span>
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#">HomePage</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">About me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">Services</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">Works</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">Contact</a>
+            </li>
           </ul>
-      </div>
-    </section>
-
-
-    <! - Prices and payment ->
-    <div id = "price_payment">
-      <h2>Prices and payment</h2>
-      <p>My most important goal is that you get ahead with your goals.</p>
-      <p>In a free opening session we will discuss what you want to achieve and how much you can or want to spend. Then we are guaranteed to find a solution that suits you.</p>
+          <img
+            class="hidden md:block w-5 cursor-pointer"
+            src="../img/moon.png"
+            alt=""
+          />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a href="#">HomePage</a>
+            </li>
+            <li>
+              <a href="#">About me</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Works</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- INTRO CONTENT -->
+      <!-- IMAGE -->
+      <img
+        class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
+        src="../img/man.png"
+        alt=""
+      />
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-96 h-96 bg-indigo-900 rounded-full"
+      ></div>
+      <!-- animated text -->
+      <!--  texts -->
     </div>
-
-    <! - Contact ->
-    <div id = "contact">
-      <div id = "email">
-        <p>Your message:</p>
-        <a href="mailto:markusgonzales@gmail.com">Send an Email</a>
-      </div>
-      <div id = "whatsApp_telefon">
-        <p>WhatsApp:</p>
-        1 222 555 44 33
-      </div>
-    </div>
-  </div>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>

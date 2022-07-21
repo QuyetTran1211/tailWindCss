@@ -5,7 +5,14 @@ module.exports = {
     debugScreens: {
       position: ['top','left']
     },
-    extend: {},
+    extend: {
+      screens: {
+        "sm":"480px"
+      }
+    },
+    fontFamily: {
+      nunito: ['Nunito Sans', 'sans-serif']
+    }
   },
   plugins: [
     require('tailwindcss-debug-screens'),
